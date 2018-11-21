@@ -92,7 +92,7 @@ unsafe impl<W> ImageAccess for SwapchainImage<W> {
 
     #[inline]
     fn initial_layout_requirement(&self) -> ImageLayout {
-        ImageLayout::PresentSrc
+        ImageLayout::Undefined
     }
 
     #[inline]
