@@ -429,7 +429,7 @@ unsafe impl<F, A> ImageAccess for AttachmentImage<F, A>
 
     #[inline]
     fn initial_layout_requirement(&self) -> ImageLayout {
-        self.attachment_layout
+        ImageLayout::Undefined
     }
 
     #[inline]
